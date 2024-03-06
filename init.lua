@@ -157,6 +157,9 @@ vim.keymap.set('i', 'jk', '<C-c>')
 vim.keymap.set('i', 'kj', '<C-c>')
 vim.keymap.set('i', '<C-s>', '<Esc>:update<cr>')
 vim.keymap.set('n', '<C-s>', ':update<cr>')
+vim.keymap.set('n', '<A-h>', ':tabprev<cr>')
+vim.keymap.set('n', '<A-l>', ':tabnext<cr>')
+vim.keymap.set('n', '<A-t>', ':tabnew<cr>')
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
