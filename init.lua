@@ -155,6 +155,8 @@ vim.opt.clipboard:append 'unnamedplus'
 --  See `:help vim.keymap.set()`
 vim.keymap.set('i', 'jk', '<C-c>')
 vim.keymap.set('i', 'kj', '<C-c>')
+vim.keymap.set('n', 'j', 'gj')
+vim.keymap.set('n', 'k', 'gk')
 vim.keymap.set('i', '<C-s>', '<Esc>:update<cr>')
 vim.keymap.set('n', '<C-s>', ':update<cr>')
 vim.keymap.set('n', '<A-h>', ':tabprev<cr>')
