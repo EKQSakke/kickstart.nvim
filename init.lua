@@ -162,7 +162,6 @@ vim.keymap.set('n', '<C-s>', ':update<cr>')
 vim.keymap.set('n', '<A-h>', ':tabprev<cr>')
 vim.keymap.set('n', '<A-l>', ':tabnext<cr>')
 vim.keymap.set('n', '<A-t>', ':tabnew<cr>')
-
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
@@ -695,7 +694,7 @@ require('lazy').setup {
           -- Accept ([y]es) the completion.
           --  This will auto-import if your LSP supports it.
           --  This will expand snippets if the LSP sent a snippet.
-          ['<C-y>'] = cmp.mapping.confirm { select = true },
+          ['<CR>'] = cmp.mapping.confirm { select = true },
 
           -- Manually trigger a completion from nvim-cmp.
           --  Generally you don't need this, because nvim-cmp will display
