@@ -557,6 +557,7 @@ require('lazy').setup {
         -- But for many setups, the LSP (`tsserver`) will work just fine
         tsserver = {},
         angularls = {},
+        omnisharp = {},
         ols = { tabs_width = 2, on_attach = require('lsp-format').on_attach },
         --
 
