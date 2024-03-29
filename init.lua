@@ -232,6 +232,9 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup {
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+  { 'lukas-reineke/lsp-format.nvim', opts = {
+    ols = { tab_width = 2 },
+  } },
 
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
@@ -554,6 +557,7 @@ require('lazy').setup {
         -- But for many setups, the LSP (`tsserver`) will work just fine
         tsserver = {},
         angularls = {},
+        ols = { tabs_width = 2, on_attach = require('lsp-format').on_attach },
         --
 
         lua_ls = {
