@@ -95,6 +95,9 @@ vim.g.maplocalleader = ' '
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
 
+vim.opt.shell = 'powershell.exe'
+vim.opt.shellpipe = '|'
+vim.opt.shellredir = '>'
 -- Make line numbers default
 vim.opt.number = true
 -- You can also add relative line numbers, for help with jumping.
@@ -250,6 +253,7 @@ require('lazy').setup {
   -- autosaving
   { 'Pocco81/auto-save.nvim', opts = {} },
 
+  { 'xiyaowong/transparent.nvim', opts = {} },
   -- Here is a more advanced example where we pass configuration
   -- options to `gitsigns.nvim`. This is equivalent to the following lua:
   --    require('gitsigns').setup({ ... })
